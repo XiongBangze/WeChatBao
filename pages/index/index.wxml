@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<!-- <view> -->
+<!-- <image class= "image" mode="aspectFill" src="../../screenshots/meizhi01.png"/> -->
+   <!-- <view class= "card" wx:for = "{{items}}">
+  
+    <view  data-url="{{item.url}}" bindtap = "onItemClick">
+       <image class= "image" mode="aspectFill" src="{{item.url}}"/>
+       <view class="title">{{item.title}}</view>
+    </view>
+
+  </view> 
+
+</view> -->
+
+<view class="img" wx:for="{{items}}" wx:for-item="img" wx:key="img" id="img" >
+      <image class= "image" mode="aspectFit" src="{{img.url}}" bindtap = "onItemClick" data-img='{{img.url}}'/>
+</view>
+
+
